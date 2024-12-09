@@ -7287,4 +7287,33 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
 }
 
+/*** Whatsapp Floating Button ***/
+.whatsapp-float {
+  position: fixed;
+  bottom: 42px;
+  right: 30px;
+  background-color: #ff663b; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #f9b700;
+}
+
+.whatsapp-float .whatsapp-icon {
+  width: 40px; 
+  height: 40px;
+}
+
+
 /*# sourceMappingURL=style.css.map */
