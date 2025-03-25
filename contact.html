@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- NewsLetter CSS -->
+    <link rel="stylesheet" href="css/newsletter.css">
+
 </head>
 
 <body>
@@ -48,13 +51,15 @@
                                 <!-- <li class="nav-item">
                                     <a class="nav-link" href="about.html">About</a>
                                 </li> -->
-                               
+
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Courses
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="certification-course.html">English Language Certifications</a>
+                                        <a class="dropdown-item" href="certification-course.html">English Language
+                                            Certifications</a>
                                         <a class="dropdown-item" href="career-course.html">Career
                                             Advancement</a>
                                         <a class="dropdown-item" href="corporate-course.html">Corporate
@@ -92,115 +97,136 @@
             </div>
         </div>
     </section>
-
- <!-- Contact Section -->
-<section class="contact-section section_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="contact-title">Unlock Your English Journey Today!</h2>
-                <h6>Request more details or take the first step toward enrolling in your desired course.</h6>
-                <br>
-                <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
-                    <li style="margin-bottom: 10px;">Explore English courses designed for individuals and professionals.</li>
-                    <li style="margin-bottom: 10px;">Request customized corporate training programs for your team.</li>
-                    <li style="margin-bottom: 10px;">Enhance communication skills or prepare for certifications like IELTS and TOEFL.</li>
-                    <li style="margin-bottom: 10px;">Get a tailored plan and expert guidance based on your needs.</li>
-                </ul>                
-                <br>
-            </div>
-            <div class="col-lg-8">
-                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                    <p>Fill out the form below, and our team will get back to you!</p>
+<!-- Contact Form-->
+    <section class="contact-section section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title">Unlock Your English Journey Today!</h2>
+                    <h6>Request more details or take the first step toward enrolling in your desired course.</h6>
                     <br>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control" name="name" id="name" type="text" 
-                                       placeholder="Full Name (Mandatory)" required>
-                                <small id="nameError" class="error-message text-danger" style="display: none;">Full name is required.</small>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control" name="email" id="email" type="email" 
-                                       placeholder="Email Address (Mandatory)" required>
-                                <small id="emailError" class="error-message text-danger" style="display: none;">Please enter a valid email address.</small>
-                            </div>
-                        </div>                        
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input class="form-control" name="phone" id="phone" type="text" placeholder="Phone Number (Optional)">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <select class="form-control" name="country" id="country" required>
-                                    <option value="" disabled selected>Country of Residence</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="United States">United States</option>
-                                    <option value="Canada">Canada</option>
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="United Arab Emirates">United Arab Emirates</option>
-                                    <option value="India">India</option>
-                                    <!-- Add more countries as needed -->
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <select class="form-control" name="course" id="course" required>
-                                    <option value="" disabled selected>Which course are you interested in?</option>
-                                    <option value="certifications_course">Certifications e.g. IELTS, TOEFL, TEFL</option>
-                                    <option value="career_advancement_course">Career Advancement</option>
-                                    <option value="corporate_training_course">Corporate Training</option>
-                                    <option value="business_english_course">Business English</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
-                                    placeholder="Tell us more about your requirements or goals. (Optional)"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group mt-3">
-                        <button type="submit" class="button button-contactForm btn_1">Send My Inquiry</button>
-                    </div>
-                </form>
-                <div id="submissionMessage" class="alert alert-success mt-4" style="display: none;">
-                    Thank you for your inquiry! Our team will reach out to you soon with the information you need.
+                    <ul style="list-style-type: disc; padding-left: 20px; margin: 0;">
+                        <li style="margin-bottom: 10px;">Explore English courses designed for individuals and
+                            professionals.</li>
+                        <li style="margin-bottom: 10px;">Request customized corporate training programs for your team.
+                        </li>
+                        <li style="margin-bottom: 10px;">Enhance communication skills or prepare for certifications like
+                            IELTS and TOEFL.</li>
+                        <li style="margin-bottom: 10px;">Get a tailored plan and expert guidance based on your needs.
+                        </li>
+                    </ul>
+                    <br>
                 </div>
-                </form>
-            </div>
-            <div class="col-lg-4">
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-home"></i></span>
-                    <div class="media-body">
-                        <h3>Dubai, UAE</h3>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" id="contactForm" novalidate="novalidate">
+                        <p>Fill out the form below, and our team will get back to you!</p>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" id="name" type="text"
+                                        placeholder="Full Name (Mandatory)" required>
+                                    <small id="nameError" class="error-message text-danger" style="display: none;">Full
+                                        name is required.</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" id="email" type="email"
+                                        placeholder="Email Address (Mandatory)" required>
+                                    <small id="emailError" class="error-message text-danger"
+                                        style="display: none;">Please enter a valid email address.</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="phone" id="phone" type="text"
+                                        placeholder="Phone Number (Optional)">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-control" name="country" id="country" required>
+                                        <option value="" disabled selected>Country of Residence</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="United States">United States</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="India">India</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <small id="countryError" class="error-message text-danger"
+                                        style="display: none;">Please select your country.</small>
+                                </div>
+                            </div>
+                            <!-- Hidden input for "Other" country -->
+                            <div class="col-sm-6" id="otherCountryDiv" style="display: none;">
+                                <div class="form-group">
+                                    <input class="form-control" name="other_country" id="other_country" type="text"
+                                        placeholder="Please specify your country (Optional)">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <select class="form-control" name="course" id="course" required>
+                                        <option value="" disabled selected>Which course are you interested in?</option>
+                                        <option value="certifications_course">Certifications e.g. IELTS, TOEFL, TEFL
+                                        </option>
+                                        <option value="career_advancement_course">Career Advancement</option>
+                                        <option value="corporate_training_course">Corporate Training</option>
+                                        <option value="business_english_course">Business English</option>
+                                    </select>
+                                    <small id="courseError" class="error-message text-danger"
+                                        style="display: none;">Please select a course.</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                                        placeholder="Tell us more about your requirements or goals. (Optional)"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm btn_1">Send My Inquiry</button>
+                        </div>
+                    </form>
+                    <!-- Snackbar -->
+                    <div id="submissionMessage" class="alert alert-success mt-4" style="display: none;">
+                        Thank you for your inquiry! Our team will reach out to you soon with the information you need.
+                    </div>
+                    <div id="errorMessage" class="alert alert-danger mt-4" style="display: none;">
+                        An error occurred. Please try again later.
                     </div>
                 </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                    <div class="media-body">
-                        <h3>+971 50 860 7247</h3>
-                        <p>Mon to Fri 9am to 6pm</p>
+                <!-- Location -->
+                <div class="col-lg-4">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Dubai, UAE</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-email"></i></span>
-                    <div class="media-body">
-                        <h3>info@eacademy247.com</h3>
-                        <p>Send us your query anytime!</p>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>+971 50 860 7247</h3>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>info@eacademy247.com</h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- footer part start-->
     <footer class="footer-area">
@@ -209,27 +235,31 @@
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
                         <a href="index.html"> <img src="img/logo.png" alt=""> </a>
-                        <p>Empowering learners worldwide with innovative and personalized English language courses. At eAcademy247, we help you break barriers and achieve your goals with confidence.</p>
+                        <p>Empowering learners worldwide with innovative and personalized English language courses. At
+                            eAcademy247, we help you break barriers and achieve your goals with confidence.</p>
                         <!-- <p>But when shot real her hamber her </p> -->
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-4">
                     <div class="single-footer-widget footer_2">
                         <h4>Newsletter</h4>
-                        <p>Stay informed about the latest courses, tips, and updates from eAcademy247. Unlock your potential and achieve your goals with us.
+                        <p>Stay informed about the latest courses, tips, and updates from eAcademy247. Unlock your
+                            potential and achieve your goals with us.
                         </p>
-                        <form action="#">
+                        <form id="newsletterForm">
                             <div class="form-group">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Enter email address'
+                                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter email address"
                                         onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Enter email address'">
                                     <div class="input-group-append">
-                                        <button class="btn btn_1" type="button"><i class="ti-angle-right"></i></button>
+                                        <button class="btn btn_1" id="newsletterSubmit" type="button"><i class="ti-angle-right"></i></button>
                                     </div>
                                 </div>
+                                <small id="newsletterError" class="error-message text-danger" style="display: none;">Please enter a valid email.</small>
                             </div>
                         </form>
+                        <div id="snackbar" class="snackbar">Newsletter Activated!</div>                        
                         <!-- <div class="social_icon">
                             <a href="#"> <i class="ti-facebook"></i> </a>
                             <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -242,7 +272,7 @@
                     <div class="single-footer-widget footer_2">
                         <h4>Contact us</h4>
                         <div class="contact_info">
-                            <p><span> Office :</span>  Dubai, UAE</p>
+                            <p><span> Office :</span> Dubai, UAE</p>
                             <p><span> Phone :</span> +971 50 860 7247</p>
                             <p><span> Email : </span>info@eacademy247.com</p>
                         </div>
@@ -257,7 +287,10 @@
                     <div class="copyright_part_text text-center">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | eAcademy247</p>
+                                <p class="footer-text m-0">Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    eAcademy247
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -269,122 +302,150 @@
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/971508607247" target="_blank" class="whatsapp-float">
-    <img src="img/whatsapp-logo.png" alt="WhatsApp Icon" class="whatsapp-icon">
+        <img src="img/whatsapp-logo.png" alt="WhatsApp Icon" class="whatsapp-icon">
     </a>
 
     <!-- JS Scripts -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
- <!-- JavaScript for Form Validation and Submission Message -->
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-    const submissionMessage = document.getElementById("submissionMessage");
 
-    form.addEventListener("submit", function (event) {
-        let isValid = true;
+    <!-- JavaScript for Newsletter -->
+    <script src="js/newsletter.js"></script>
+    
+    <!-- JavaScript for Form Validation and Submission Message -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            const submissionMessage = document.getElementById("submissionMessage");
+    
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                let isValid = true;
+    
+                // Select fields to validate
+                const nameField = document.getElementById("name");
+                const emailField = document.getElementById("email");
+                const countryField = document.getElementById("country");
+                const otherCountryField = document.getElementById("other_country");
+                const courseField = document.getElementById("course");
+    
+                // Error messages
+                const nameError = document.getElementById("nameError");
+                const emailError = document.getElementById("emailError");
+                const countryError = document.getElementById("countryError");
+                const otherCountryError = document.getElementById("otherCountryError");
+                const courseError = document.getElementById("courseError");
+    
+                // Clear previous errors
+                document.querySelectorAll(".error-message").forEach((el) => (el.style.display = "none"));
+                document.querySelectorAll(".form-control").forEach((el) => el.classList.remove("is-invalid"));
+    
+                // Validate Name Field
+                if (!nameField.value.trim()) {
+                    isValid = false;
+                    nameField.classList.add("is-invalid");
+                    nameError.style.display = "block";
+                }
+    
+                // Validate Email Field
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(emailField.value)) {
+                    isValid = false;
+                    emailField.classList.add("is-invalid");
+                    emailError.style.display = "block";
+                }
+    
+                // Validate Country Selection
+                if (!countryField.value) {
+                    isValid = false;
+                    countryField.classList.add("is-invalid");
+                    countryError.style.display = "block";
+                }
+    
+                // Validate "Other Country" if "Other" is selected
+                if (countryField.value === "other" && !otherCountryField.value.trim()) {
+                    isValid = false;
+                    otherCountryField.classList.add("is-invalid");
+                    otherCountryError.style.display = "block";
+                }
+    
+                // Validate Course Selection
+                if (!courseField.value) {
+                    isValid = false;
+                    courseField.classList.add("is-invalid");
+                    courseError.style.display = "block";
+                }
+    
+                // If validation failed, stop form submission
+                if (!isValid) {
+                    return;
+                }
+    
+                // Prepare the form data
+                const formData = new FormData(form);
+    
+                // If "Other Country" is selected, add its value to the form data
+                if (countryField.value === "other") {
+                    formData.append("country", otherCountryField.value.trim());
+                }
+    
+                // Send the form data via AJAX
+                fetch("contact_process.php", {
+                    method: "POST",
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Check if the response indicates success
+                        if (data.success) {
+                            submissionMessage.style.display = "block";
+                            submissionMessage.textContent = data.message;
+                            form.reset(); // Clear the form fields
+                            // Hide the "Other Country" field after reset
+                            document.getElementById("otherCountryDiv").style.display = "none";
+                        } else {
+                            alert(data.message); // Show the error message
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert("An error occurred while submitting the form.");
+                    });
+            });
+        });
+    </script>
+    
 
-        // Select fields to validate
-        const nameField = document.getElementById("name");
-        const emailField = document.getElementById("email");
-        const countryField = document.getElementById("country");
-        const courseField = document.getElementById("course");
+    <script>
+        document.getElementById('country').addEventListener('change', function () {
+            const otherCountryDiv = document.getElementById('otherCountryDiv');
+            if (this.value === 'other') {
+                otherCountryDiv.style.display = 'block'; // Show the input field for "Other"
+            } else {
+                otherCountryDiv.style.display = 'none'; // Hide the input field if not "Other"
+                document.getElementById('other_country').value = ''; // Clear the input value
+            }
+        });
+    </script>
 
-        // Error messages
-        const nameError = document.getElementById("nameError");
-        const emailError = document.getElementById("emailError");
-        let countryError = document.getElementById("countryError");
-        let courseError = document.getElementById("courseError");
 
-        // If error messages for country and course do not exist, create them
-        if (!countryError) {
-            countryError = document.createElement("small");
-            countryError.id = "countryError";
-            countryError.className = "error-message text-danger";
-            countryError.style.display = "none";
-            countryField.parentNode.appendChild(countryError);
+
+    <style>
+        .is-invalid {
+            border-color: red;
         }
 
-        if (!courseError) {
-            courseError = document.createElement("small");
-            courseError.id = "courseError";
-            courseError.className = "error-message text-danger";
-            courseError.style.display = "none";
-            courseField.parentNode.appendChild(courseError);
+        .error-message {
+            font-size: 12px;
+            margin-top: 5px;
         }
 
-        countryError.textContent = "Please select your country.";
-        courseError.textContent = "Please select a course.";
-
-        // Clear previous errors
-        document.querySelectorAll(".error-message").forEach((el) => (el.style.display = "none"));
-        document.querySelectorAll(".form-control").forEach((el) => el.classList.remove("is-invalid"));
-
-        // Validate Name Field
-        if (!nameField.value.trim()) {
-            isValid = false;
-            nameField.classList.add("is-invalid");
-            nameError.style.display = "block";
+        #submissionMessage {
+            font-size: 16px;
+            text-align: center;
         }
-
-        // Validate Email Field
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(emailField.value)) {
-            isValid = false;
-            emailField.classList.add("is-invalid");
-            emailError.style.display = "block";
-        }
-
-        // Validate Country Selection
-        if (!countryField.value) {
-            isValid = false;
-            countryField.classList.add("is-invalid");
-            countryError.style.display = "block";
-        }
-
-        // Validate Course Selection
-        if (!courseField.value) {
-            isValid = false;
-            courseField.classList.add("is-invalid");
-            courseError.style.display = "block";
-        }
-
-        // Prevent form submission if validation fails
-        if (!isValid) {
-            event.preventDefault();
-            return;
-        }
-
-        // Simulate successful form submission
-        event.preventDefault();
-        form.reset();
-        submissionMessage.style.display = "block";
-
-        // Automatically hide the message after 5 seconds
-        setTimeout(() => {
-            submissionMessage.style.display = "none";
-        }, 5000);
-    });
-});
-
-
-</script>
-
-<style>
-    .is-invalid {
-        border-color: red;
-    }
-
-    .error-message {
-        font-size: 12px;
-        margin-top: 5px;
-    }
-
-    #submissionMessage {
-        font-size: 16px;
-        text-align: center;
-    }
-</style>
+    </style>
 </body>
 
 </html>

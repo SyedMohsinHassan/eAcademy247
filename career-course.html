@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- NewsLetter CSS -->
+    <link rel="stylesheet" href="css/newsletter.css">
 </head>
 
 <body>
@@ -316,27 +318,31 @@
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
                         <a href="index.html"> <img src="img/logo.png" alt=""> </a>
-                        <p>Empowering learners worldwide with innovative and personalized English language courses. At eAcademy247, we help you break barriers and achieve your goals with confidence.</p>
+                        <p>Empowering learners worldwide with innovative and personalized English language courses. At
+                            eAcademy247, we help you break barriers and achieve your goals with confidence.</p>
                         <!-- <p>But when shot real her hamber her </p> -->
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xl-4">
                     <div class="single-footer-widget footer_2">
                         <h4>Newsletter</h4>
-                        <p>Stay informed about the latest courses, tips, and updates from eAcademy247. Unlock your potential and achieve your goals with us.
+                        <p>Stay informed about the latest courses, tips, and updates from eAcademy247. Unlock your
+                            potential and achieve your goals with us.
                         </p>
-                        <form action="#">
+                        <form id="newsletterForm">
                             <div class="form-group">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Enter email address'
+                                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter email address"
                                         onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Enter email address'">
                                     <div class="input-group-append">
-                                        <button class="btn btn_1" type="button"><i class="ti-angle-right"></i></button>
+                                        <button class="btn btn_1" id="newsletterSubmit" type="button"><i class="ti-angle-right"></i></button>
                                     </div>
                                 </div>
+                                <small id="newsletterError" class="error-message text-danger" style="display: none;">Please enter a valid email.</small>
                             </div>
                         </form>
+                        <div id="snackbar" class="snackbar">Newsletter Activated!</div>                        
                         <!-- <div class="social_icon">
                             <a href="#"> <i class="ti-facebook"></i> </a>
                             <a href="#"> <i class="ti-twitter-alt"></i> </a>
@@ -349,7 +355,7 @@
                     <div class="single-footer-widget footer_2">
                         <h4>Contact us</h4>
                         <div class="contact_info">
-                            <p><span> Office :</span>  Dubai, UAE</p>
+                            <p><span> Office :</span> Dubai, UAE</p>
                             <p><span> Phone :</span> +971 50 860 7247</p>
                             <p><span> Email : </span>info@eacademy247.com</p>
                         </div>
@@ -364,7 +370,10 @@
                     <div class="copyright_part_text text-center">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | eAcademy247</p>
+                                <p class="footer-text m-0">Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    eAcademy247
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -401,6 +410,8 @@
     <script src="js/waypoints.min.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <!-- JavaScript for Newsletter -->
+    <script src="js/newsletter.js"></script>
 </body>
 
 </html>
